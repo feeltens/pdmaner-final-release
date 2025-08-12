@@ -1,47 +1,55 @@
-# 一、软件介绍
+# 一、项目说明
 
-PDManer元数建模，是一款多操作系统开源免费的桌面版关系数据库模型建模工具，相对于PowerDesigner，他具备界面简洁美观，操作简单，上手容易等特点。支持Windows,Mac,Linux等操作系统，也能够支持国产操作系统，能够支持的数据库如下：
+本仓库为 **PDManer 元数建模 v4.9.3** 的 **最后发行版本源码存档**。  
+由于官方已升级至新版本且旧版本安装包无法下载，因此将源码备份于此，方便有需要的用户自行编译使用。  
 
-- MySQL,PostgreSQL,Oracle,SQLServer等常见数据库
-- 支持达梦，GuassDB等国产数据库
-- 支持Hive，MaxCompute等大数据方向的数据库
-- 用户还可以自行添加更多的数据库扩展
+PDManer 是一款多操作系统、开源免费的桌面版关系数据库建模工具，界面简洁美观，操作简单，上手容易，支持 Windows、Mac、Linux 及国产操作系统。  
 
-> 本产品基于 ES6+React+Electron+Java构建
+支持的数据库包括：
+- MySQL、PostgreSQL、Oracle、SQLServer 等常见数据库  
+- 达梦、GuassDB 等国产数据库  
+- Hive、MaxCompute 等大数据方向数据库  
+- 用户可自行扩展更多数据库类型  
 
+本产品基于 **ES6 + React + Electron + Java** 构建。  
 
-[PDManer元数建模-4.0]，历时四年，持续升级，工匠精神，做一款简单好用的数据库建模平台。
+---
 
-[[PDMan-v2](https://gitee.com/robergroup/pdman)] --> [[CHINER-v3](https://gitee.com/robergroup/chiner)] --> [PDManer-v4]，连续四年，产品一直保持很好的传承和延续。
+# 二、主要功能
 
-PDManer=PDMan+er(chiner的er部分，ER也表示关系图的意思)，“元数建模”的中文名称依然延续，名称需要精简，拿掉chi表示中国的前缀部分，使用中文能更加明确这是一个中国小团队的作品，4.0版本之后，产品名称：[PDManer元数建模]就此确定，承接了PDMan以及CHINER的所有功能，并且进行延续精进
+- **数据表管理**：表、字段、注释、索引等  
+- **视图管理**：多表多字段组合视图，支持生成 DDL 及 Java DTO  
+- **ER 关系图**：绘制 ER 图及高阶抽象模型  
+- **数据字典**：代码映射表管理，并与数据表字段关联  
+- **数据类型**：支持基础数据类型与数据域，用户可自定义  
+- **多数据库支持**：内置主流数据库，支持自定义扩展  
+- **代码生成**：内置 Java / MyBatis / MyBatisPlus / C# 等代码生成，可扩展 Python 等  
+- **版本管理**：数据表版本管理与增量 DDL 生成  
+- **生态对接**：支持导入 PowerDesigner PDM、旧版 PDMan 文件，支持导出 Word 文档等  
 
+---
 
+# 三、如何编译
 
-# 二、PDManer元数建模，主要功能如下
+如需本地编译本版本，请参考这篇详细教程：  
+🔗 [PDManer 旧版本手动编译安装包全记录](https://www.bytezonex.com/archives/pdmaner-old-version-build-guide.html)
 
-**数据表管理：**  数据表，字段，注释，索引等基本功能  
-**视图管理：** 实现选择多张表多个字段后，组合一个新的视图对象，视图可生成DDL以及相关程序代码，例如Java的DTO等  
-**ER关系图：** 数据表可绘制ER关系图至画布，也支持概念模型等高阶抽像设计  
-**数据字典：** 代码映射表管理，例如1表示男，2表示女，并且实现数据字典与数据表字段的关联  
-**数据类型：** 系统实现了基础数据类型，基础数据类型在不同数据库下表现为不同数据库类型的方言，这是实现多数据**库支持的基础，为更贴近业务，引入了PowerDesigner的数据域这一概念，用于统一同一类具有同样业务属性字段的批量设置类型，长度等。基础数据类型以及数据域，用户均可自行添加，自行定义。  
-**多数据库：** 内置主流常见数据库，如MySQL，PostgreSQL，SQLServer，Oracle等，并且支持用户自行添加新的数据库。  
-**代码生成：** 内置Java，Mybatis，MyBatisPlus等常规情况下Controller，Service，Mapper的生成，也添加了C#语言支持，可自行扩展对其他语言的支持，如Python等  
-**版本管理：** 实现数据表的版本管理，可生成增量DDL脚本  
-**生态对接：** 能够导入PowerDesigner的pdm文件，老版本的PDMan文件，也能导出为word文档，导出相关设置等
-
-# 三、软件下载
-https://gitee.com/robergroup/pdmaner/releases
-
+---
 
 # 四、特别说明
-1. 如果你只是为了使用，请直接下载安装版。
-2. 如果你为了研究，你可以自行clone代码到本地研究源代码，阅读源代码需要较高的前端基础。
-3. 安装文件都是基于当时master分支打包的，不存在编译不通过问题。
-4. 作者很忙，时间有限，作者不解答初级前端问题，还请多多理解支持。
-5. 非常欢迎提PR的同学
-6. Java部分代码:(https://gitee.com/robergroup/chiner-java)
 
-# 五、操作手册地址
-1. [官网操作手册-语雀版](https://www.yuque.com/pdmaner/docs)
-2. [oschina pdman专栏](https://my.oschina.net/skymozn?tab=newest&catalogId=5775221&sortType=time)
+1. 本仓库源码仅用于学习与历史存档，不再进行功能更新  
+2. 编译需具备一定前端开发基础（React / Electron / Node.js）  
+3. 安装包请自行编译生成，本仓库不直接提供成品安装包  
+4. 欢迎提交 PR 修复问题或改进文档  
+5. Java 部分代码参考：[chiner-java](https://gitee.com/robergroup/chiner-java)  
+
+---
+
+# 五、相关资源
+
+- [官方 PDManer 新版本](https://gitee.com/robergroup/pdmaner)
+- [操作手册 - 语雀版](https://www.yuque.com/pdmaner/docs)
+- [OSChina PDMan 专栏](https://my.oschina.net/skymozn?tab=newest&catalogId=5775221&sortType=time)
+
+---

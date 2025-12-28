@@ -3,6 +3,16 @@
 本仓库为 **PDManer 元数建模 v4.9.3** 的 **最后发行版本源码存档**。  
 由于官方已升级至新版本且旧版本安装包无法下载，因此将源码备份于此，方便有需要的用户自行编译使用。  
 
+PDManer-v4.9.3 安装包
+for mac arm:
+https://github.com/feeltens/pdmaner-final-release/blob/main/dist/PDManer-mac_arm64_v4.9.3.dmg
+
+for mac x64:
+https://github.com/feeltens/pdmaner-final-release/blob/main/dist/PDManer-mac_x64_v4.9.3.dmg
+
+for windows:
+https://github.com/feeltens/pdmaner-final-release/blob/main/dist/PDManer-win_v4.9.3.exe
+
 PDManer 是一款多操作系统、开源免费的桌面版关系数据库建模工具，界面简洁美观，操作简单，上手容易，支持 Windows、Mac、Linux 及国产操作系统。  
 
 支持的数据库包括：
